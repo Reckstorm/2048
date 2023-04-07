@@ -66,7 +66,7 @@ namespace _2048
                 for (int j = 0; j < _fieldSize; j++)
                 {
                     int index = buttons.FindIndex(x => x.Location.X.Equals(_coords[i]) && x.Location.Y.Equals(_coords[j]));
-                    if ((index == -1 && !f) || (index != -1 && !f))
+                    if (!f)
                     {
                         tempX = i;
                         tempY = j;
@@ -93,7 +93,7 @@ namespace _2048
                 for (int i = 0; i < _fieldSize; i++)
                 {
                     int index = buttons.FindIndex(x => x.Location.X.Equals(_coords[i]) && x.Location.Y.Equals(_coords[j]));
-                    if ((index == -1 && !f) || (index != -1 && !f))
+                    if (!f)
                     {
                         tempX = i;
                         tempY = j;
@@ -121,7 +121,7 @@ namespace _2048
                 for (int j = _fieldSize-1; j >= 0 ; j--)
                 {
                     int index = buttons.FindIndex(x => x.Location.X.Equals(_coords[i]) && x.Location.Y.Equals(_coords[j]));
-                    if ((index == -1 && !f) || (index != -1 && !f))
+                    if (!f)
                     {
                         tempX = i;
                         tempY = j;
@@ -149,7 +149,7 @@ namespace _2048
                 for (int i = _fieldSize - 1; i >= 0; i--)
                 {
                     int index = buttons.FindIndex(x => x.Location.X.Equals(_coords[i]) && x.Location.Y.Equals(_coords[j]));
-                    if ((index == -1 && !f) || (index != -1 && !f))
+                    if (!f)
                     {
                         tempX = i;
                         tempY = j;
